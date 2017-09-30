@@ -14,11 +14,6 @@
       h2, h4 {
         margin: 0;
       }
-      #about {
-        float: right;
-        width: calc(100% - 600px - 2em - 8ex);
-        min-width: 10em;
-      }
       .control {
         margin: 1ex;
       }
@@ -35,22 +30,37 @@
         float: left;
         margin: 1ex;
       }
-      #export {
-        clear: left;
-      }
-      #copyright {
-        clear: both;
-        margin: 1em;
-        font-size: small;
-        text-align: center;
-        font-style: italic;
-      }
     </style>
   </head>
   <body style="background">
 <div><center>
+
+<button><a href="play.html"><font color="#f44242" size="6">CLICK HERE TO<br>FIGHT THE BOT!</a></font></button>
+
+      <div id="demos">
+<h1><font color="blue">NEURAL NET TRAINING ITSELF...</h1>
+
+        <h4>Best net playing as:</h4>
+        <div class="demo-container">
+          <div class="demo-header">X vs. random</div>
+          <canvas id="x-random-demo-board" width="150" height="150"></canvas>
+        </div>
+        <div class="demo-container">
+          <div class="demo-header">X vs. smart</div>
+          <canvas id="x-smart-demo-board" width="150" height="150"></canvas>
+        </div>
+        <div class="demo-container">
+          <div class="demo-header">O vs. random</div>
+          <canvas id="o-random-demo-board" width="150" height="150"></canvas>
+        </div>
+        <div class="demo-container">
+          <div class="demo-header">O vs. smart</div>
+          <canvas id="o-smart-demo-board" width="150" height="150"></canvas>
+        </div>
+      </div>
     <div id="status">
-      <h2 id="current"
+<br><br>
+      <h2 id="current" style="clear:both"
           data-unpaused="Running generation {generation}..."
           data-paused="Paused at generation {generation}"
           data-pausing="Pausing..."></h2>
@@ -99,25 +109,6 @@
       </div>
     </div>
 
-    <div id="demos">
-      <h4>Best net playing as:</h4>
-      <div class="demo-container">
-        <div class="demo-header">X vs. random</div>
-        <canvas id="x-random-demo-board" width="150" height="150"></canvas>
-      </div>
-      <div class="demo-container">
-        <div class="demo-header">X vs. smart</div>
-        <canvas id="x-smart-demo-board" width="150" height="150"></canvas>
-      </div>
-      <div class="demo-container">
-        <div class="demo-header">O vs. random</div>
-        <canvas id="o-random-demo-board" width="150" height="150"></canvas>
-      </div>
-      <div class="demo-container">
-        <div class="demo-header">O vs. smart</div>
-        <canvas id="o-smart-demo-board" width="150" height="150"></canvas>
-      </div>
-    </div>
 
     <div id="export">
       <h4>Best net source:</h4>
